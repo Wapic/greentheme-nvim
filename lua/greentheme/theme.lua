@@ -1,7 +1,7 @@
 local M = {}
 
 function M.get(config)
-    local p = require('palette')
+    local p = require('greentheme.palette')
     local theme = {}
 
     local background = (config.transparent_background and p.none) or p.background
