@@ -309,3 +309,5 @@ function M.get(config)
 
     return theme
 end
+
+return M 
