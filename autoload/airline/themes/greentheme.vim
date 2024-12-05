@@ -1,9 +1,8 @@
 " ----------------------------------------------------------------
-" File: everblush.vim
+" File: greentheme.vim
 " Description: A dark, vibrant, and beautiful color scheme for Vim
-" Author: Prateek Tade <prateek.tade@gmail.com>
-" Source: https://github.com/Everblush/everblush.vim
-" Last Modified: 24 Jan 2023
+" Author: Wapic 
+" Source: https://github.com/Wapic/greentheme-nvim
 " ----------------------------------------------------------------
 
 if &background ==# 'dark'
@@ -28,23 +27,23 @@ if &background ==# 'dark'
     " Warning section
     let s:WR = ['#141b1e', '#e5c76b', 234, 221]
 
-    let g:airline#themes#everblush#palette = {}
+    let g:airline#themes#greentheme#palette = {}
 
-    let g:airline#themes#everblush#palette.normal = airline#themes#generate_color_map(s:N1, s:N2, s:N3)
+    let g:airline#themes#greentheme#palette.normal = airline#themes#generate_color_map(s:N1, s:N2, s:N3)
 
-    let g:airline#themes#everblush#palette.insert = airline#themes#generate_color_map(s:I1, s:I2, s:I3)
-    let g:airline#themes#everblush#palette.insert_replace = { 'airline_a': [ s:RE[0], s:I1[1], s:RE[1], s:I1[3], '' ] }
+    let g:airline#themes#greentheme#palette.insert = airline#themes#generate_color_map(s:I1, s:I2, s:I3)
+    let g:airline#themes#greentheme#palette.insert_replace = { 'airline_a': [ s:RE[0], s:I1[1], s:RE[1], s:I1[3], '' ] }
 
-    let g:airline#themes#everblush#palette.visual = airline#themes#generate_color_map(s:V1, s:V2, s:V3)
+    let g:airline#themes#greentheme#palette.visual = airline#themes#generate_color_map(s:V1, s:V2, s:V3)
 
-    let g:airline#themes#everblush#palette.replace = copy(g:airline#themes#everblush#palette.normal)
-    let g:airline#themes#everblush#palette.replace.airline_a = [ s:RE[0], s:RE[1], s:RE[2], s:RE[3], '' ]
+    let g:airline#themes#greentheme#palette.replace = copy(g:airline#themes#greentheme#palette.normal)
+    let g:airline#themes#greentheme#palette.replace.airline_a = [ s:RE[0], s:RE[1], s:RE[2], s:RE[3], '' ]
 
     let s:IA = [ s:N1[1], s:N3[1], s:N1[3], s:N3[3], '' ]
-    let g:airline#themes#everblush#palette.inactive = airline#themes#generate_color_map(s:IA, s:IA, s:IA)
+    let g:airline#themes#greentheme#palette.inactive = airline#themes#generate_color_map(s:IA, s:IA, s:IA)
 
-    let g:airline#themes#everblush#palette.normal.airline_warning = s:WR
-    let g:airline#themes#everblush#palette.insert.airline_warning = s:WR
-    let g:airline#themes#everblush#palette.visual.airline_warning = s:WR
+    let g:airline#themes#greentheme#palette.normal.airline_warning = s:WR
+    let g:airline#themes#greentheme#palette.insert.airline_warning = s:WR
+    let g:airline#themes#greentheme#palette.visual.airline_warning = s:WR
 endif
 
