@@ -21,9 +21,9 @@ function M.colorscheme()
 	end
 
 	vim.opt.termguicolors = true
-	vim.g.colors_name = 'everblush'
+	vim.g.colors_name = 'greentheme'
 
-	local theme = require('everblush.theme').get(config)
+	local theme = require('greentheme.theme').get(config)
 
 	-- Set theme highlights
 	for group, color in pairs(theme) do
