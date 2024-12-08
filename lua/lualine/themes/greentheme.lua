@@ -2,28 +2,28 @@ local p = require('greentheme.palette')
 
 return {
     normal = {
-        a = { bg = p.color2, fg = p.background },
-        b = { bg = p.background, fg = p.color7 },
+        a = { bg = p.green, fg = p.background },
+        b = { bg = p.background, fg = p.gray },
         c = { bg = p.background, fg = p.foreground },
     },
     insert = {
-        a = { bg = p.color10, fg = p.background },
-        b = { bg = p.background, fg = p.color4 },
+        a = { bg = p.blue, fg = p.background },
+        b = { bg = p.background, fg = p.blue },
     },
     command = {
-        a = { bg = p.color1, fg = p.background },
-        b = { bg = p.background, fg = p.color5 },
+        a = { bg = p.red, fg = p.background },
+        b = { bg = p.background, fg = p.pink },
     },
     visual = {
-        a = { bg = p.color6, fg = p.background },
-        b = { bg = p.background, fg = p.color6 },
+        a = { bg = p.pink, fg = p.background },
+        b = { bg = p.background, fg = p.pink },
     },
     replace = {
-        a = { bg = p.color1, fg = p.background },
-        b = { bg = p.background, fg = p.color11 },
+        a = { bg = p.red, fg = p.background },
+        b = { bg = p.background, fg = p.yellow },
     },
     inactive = {
-        a = { bg = p.background, fg = p.color7 },
+        a = { bg = p.background, fg = p.gray },
         b = { bg = p.background, fg = p.foreground, gui = 'bold' },
         c = { bg = p.background, fg = p.foreground },
     },
